@@ -9,5 +9,5 @@ document.querySelector('h1').style.backgroundColor = 'purple';
 
 
 document.getElementById('changeColor').addEventListener('click', () => {
-    document.body.style.backgroundColor = '#f7afad';
+    document.body.style.backgroundColor = '#F7AFAD';
 });
