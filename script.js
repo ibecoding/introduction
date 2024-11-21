@@ -1,14 +1,27 @@
-console.log('Welcome to My First Website!');
+const hamburger = document.querySelector(".nav__hamburger");
+const linksContainer = document.querySelector(".nav__menu");
+const links = document.querySelectorAll(".nav__menu__link");
 
-document.querySelector('h1').textContent = 'Get to know me!';
-document.querySelector('h1').addEventListener('click', () => {
-    alert('You clicked on the header!');
+hamburger.addEventListener("click", () => {
+    linksContainer.classList.toggle("active");
+    hamburger.classList.toggle("active");
 });
-// if i wanna add a background to the header get to know  me
-//document.querySelector('h1').style.backgroundColor = '';
 
-
-
-document.getElementById('changeColor').addEventListener('click', () => {
-    document.body.style.backgroundColor = '#F7AFAD';
+window.addEventListener("resize", () => {
+    if (window.matchMedia("(max-width: 550px)").matches){
+        closeMenu();
+    }
 });
+
+if (window.matchMedia("(max-width: 550px)").matches){
+    closeMenu();
+}
+
+function closeMenu() {
+    links.forEach((link) => {
+        link.addEventListener("click", () => {
+            linksContainer.classList.remove("active");
+            hamburger.classList.remove("active");   
+        });
+    });
+}

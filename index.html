@@ -2,36 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    <title> My CV </title>
 </head>
 <body>
-    <header>
-        <h1>Get to know me</h1>
-    </header>
-    <main>
-        <p>This is my CV hosted on GitHub Pages.</p>
-        <nav> 
-            <ul  class="menu-bar">
-                <li><a href="index.html">Profile</a></li>
-                <li><a href="experience.html">Professional Experience</a></li>
-                <li><a href="competencies.html">Core Competencies</a></li>
-                <li><a href="courses.html">Relevant Courses</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="nav"> 
+            <div class="nav__logo">Beatrice Amezian</div>
+            <a href="#" class="nav__hamburger">
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+            </a> 
+            <div class="nav__menu">
+                <ul>
+                    <li class="nav__menu__link"><a href=index.html>Profile</a></li>
+                    <li class="nav__menu__link"><a href=experience.html>Experience</a></li>
+                    <li class="nav__menu__link"><a href=competencies.html>Competencies</a></li>
+                    <li class="nav__menu__link"><a href=courses.html>Education</a></li>
+                    <li class="nav__menu__link"><a href=contact.html>Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        
-        
-    </main>
-    <footer>
-        <p>&copy; Beatrice</p>
-        <button id="changeColor">Change Background Color</button>
-    </footer>
-    <script src="script.js"></script>
-    
-</body>
+        <div class="bg"></div>
 
+        <div class="aboutMe">
+            <figure>
+                <img src=Subject.png alt="Beatrice" />
+            </figure>
+            <h1 class="nomAbout">Beatrice Amezian</h1>
+            <h2 class="jobAbout">Software Engineer - Junior Project Manager</h2>
+            <a class="txt"> Highly organized and detail-oriented
+                Junior Project Manager with a
+                background in Software Engineering
+                and proven experience in project
+                coordination and management.
+                Adept at supervising project lifecycles,
+                ensuring quality control, efficient
+                resource allocation, and adherence to
+                timelines. Fluent in French and
+                English, with a strong command of
+                various project management tools
+                and techniques.</a>
+            
+        </div>
+        <div class="aboutMeBg"></div>
+
+
+
+
+
+
+</body>
 </html>
 
 

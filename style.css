@@ -1,60 +1,224 @@
-body {
-    font-family: Arial, sans-serif;
+
+body{
     margin: 0;
     padding: 0;
-    background-color: #f0b9f2;
-    color: #333;
 }
 
-header {
-    background: #8ac1e6;
-    color: white;
-    padding: 1em;
-    text-align: center;
+.bg{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
 }
 
-main {
-    padding: 2em;
-    text-align: center;
+.nav{
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
 }
 
-/*Menu bar CSS*/
-.menu-bar {
-    list-style-type: none;
+.nav__logo{
+    font-size: 1.5rem;
+    margin: auto 1rem
+}
+
+.nav__menu ul{
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #0a0a0a;
+    display: flex;
 }
 
-.menu-bar li a {
-    display: block;
-    color: #ffffff;
-    padding: 8px 16px;
+.nav__menu ul li{
+    list-style: none;
+}
+
+.nav__menu ul li a{
     text-decoration: none;
-    text-align: left;
+    color: #fff;
+    padding: 1rem;
+    display: block;
 }
 
-  /* Change the link color on hover */
-.menu-bar li a:hover {
-    background-color: #d470a9a0;
-    color: white;
+.nav__menu li:hover{
+    background-color: rgba(247, 189, 245, 0.46);
 }
 
-
-.compentencies-PM {
-    list-style-type: none;
-    width: 200px;
-    margin: 0 auto; 
-    padding: 0; 
+.nav__hamburger{
+    width: 1.875rem;
+    height: 1.313rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
+.nav__hamburger__line{
+    height: 0.188rem;
     width: 100%;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    transition: all ease-in-out 0.2s;
 }
+
+@media screen and (max-width: 550px){
+    .nav__hamburger{
+        display: flex;
+    }
+    .nav__menu{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: rgba(255,255,255,0.2);
+        top: -20rem;
+        width: 100%;
+        transition: all ease-in-out 0.4s;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav__menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 3rem 0 0.6rem;
+    }
+    .nav__menu ul li {
+        text-align: center;
+    }
+    .nav__menu {
+        z-index: -1;
+    }
+    .nav__menu.active {
+        top: 0;
+    }
+    .nav__hamburger.active :nth-child(1) {
+        transform:rotate(45deg) translate(0.45rem, 0.1875rem) ;
+    }
+    .nav__hamburger.active :nth-child(2) {
+        opacity: 0;
+    }
+    .nav__hamburger.active :nth-child(3) {
+        transform:rotate(-45deg) translate(0.45rem, -0.1875rem) ;
+    }
+} 
+
+
+
+
+/*CONTACT ME PAGE*/
+.contactMe figure {
+    margin-top: 400px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contactMe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.nomContact{
+    font-weight: bold;
+    font-size: 40px;
+    color: #18186e;
+}
+.jobContact{
+    font-weight: bold;
+    font-size: 30px;
+    color: #18186e;
+}
+
+.contactMeBg {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60%;
+    background-color: #a6b8f88f;
+    z-index: -1;
+    border-radius: 20px; 
+}
+
+.contactMe a {
+    text-decoration: none;
+}
+
+.contactMe .btn {
+    width: 300px; 
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactMe button {
+    background-color: #dd96f5bf;
+    color: white;
+}
+
+.contactMe button:hover {
+    background-color: #a6b8f88f;
+}
+
+.contactFooter {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #18186e;
+}
+
+
+
+
+ /*ABOUT ME PAGE*/
+ .aboutMe img{
+    width: 10%;
+    height: 10%;
+    position: relative;
+    
+ }
+
+ .aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+ }
+
+ .aboutMe a {
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;}
