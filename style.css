@@ -117,10 +117,10 @@ body{
 
 /*CONTACT ME PAGE*/
 .contactMe figure {
-    margin-top: 400px;
+    margin-top: 110px;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -136,18 +136,18 @@ body{
     flex-direction: column;
     align-items: center; 
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
     font-weight: bold;
 }
 
 .nomContact{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 25px;
     color: #18186e;
 }
 .jobContact{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 16px;
     color: #18186e;
 }
 
@@ -157,7 +157,7 @@ body{
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 60%;
+    height: 70%;
     background-color: #a6b8f88f;
     z-index: -1;
     border-radius: 20px; 
@@ -168,9 +168,9 @@ body{
 }
 
 .contactMe .btn {
-    width: 300px; 
+    width: 200px; 
     padding: 10px;
-    font-size: 30px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -189,7 +189,7 @@ body{
 .contactFooter {
     text-align: center;
     margin-top: 40px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     color: #18186e;
 }
@@ -202,7 +202,6 @@ body{
     width: 10%;
     height: 10%;
     position: relative;
-    
  }
 
  .aboutMe{
@@ -211,14 +210,23 @@ body{
     align-items: center; 
     gap: 15px;
     margin-top: 20px;
+   
+ }
+
+ .nomAbout{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 25px;
+    color: #fff;
+ }
+ .jobAbout{
+    font-weight: bold;
+    font-size: 20px;
     color: #fff;
  }
 
  .aboutMe a {
     gap: 15px;
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     text-align: center;}
