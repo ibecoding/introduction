@@ -1,10 +1,11 @@
 console.log('Welcome to My First Website!');
 
-document.querySelector('h1').textContent = 'Hello, Visitor!';
+document.querySelector('h1').textContent = 'Get to know me!';
 document.querySelector('h1').addEventListener('click', () => {
     alert('You clicked on the header!');
 });
-document.querySelector('h1').style.backgroundColor = 'purple';
+// if i wanna add a background to the header get to know  me
+//document.querySelector('h1').style.backgroundColor = '';
 
 
 

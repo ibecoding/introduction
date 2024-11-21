@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0b9f2;
     color: #333;
 }
 
 header {
-    background: #007acc;
+    background: #8ac1e6;
     color: white;
     padding: 1em;
     text-align: center;
@@ -16,6 +16,37 @@ header {
 main {
     padding: 2em;
     text-align: center;
+}
+
+/*Menu bar CSS*/
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #0a0a0a;
+}
+
+.menu-bar li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+  /* Change the link color on hover */
+.menu-bar li a:hover {
+    background-color: #d470a9a0;
+    color: white;
+}
+
+
+.compentencies-PM {
+    list-style-type: none;
+    width: 200px;
+    margin: 0 auto; 
+    padding: 0; 
 }
 
 footer {
