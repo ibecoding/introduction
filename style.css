@@ -73,6 +73,7 @@ body{
 @media screen and (max-width: 550px){
     .nav__hamburger{
         display: flex;
+        z-index: 20;
     }
     .nav__menu{
         position: absolute;
@@ -82,6 +83,7 @@ body{
         top: -20rem;
         width: 100%;
         transition: all ease-in-out 0.4s;
+        z-index: 10;
     }
     .nav{
         flex-direction: column;
@@ -100,6 +102,7 @@ body{
     }
     .nav__menu.active {
         top: 0;
+        z-index: 10;
     }
     .nav__hamburger.active :nth-child(1) {
         transform:rotate(45deg) translate(0.45rem, 0.1875rem) ;
@@ -116,6 +119,7 @@ body{
 
 
 /*CONTACT ME PAGE*/
+/*
 .contactMe figure {
     margin-top: 110px;
     overflow: hidden;
@@ -141,11 +145,14 @@ body{
 }
 
 .nomContact{
+    position: relative;
     font-weight: bold;
     font-size: 25px;
     color: #18186e;
+    text-size-adjust: auto;
 }
 .jobContact{
+    position: relative;
     font-weight: bold;
     font-size: 16px;
     color: #18186e;
@@ -193,7 +200,7 @@ body{
     font-weight: bold;
     color: #18186e;
 }
-
+*/
 
 
 

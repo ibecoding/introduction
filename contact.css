@@ -1,0 +1,142 @@
+body {
+    font-size: 16px; /* Base font size */
+}
+
+.contactMe figure {
+    margin-top: 50px;
+    overflow: hidden;
+    width: 15vw; /* Using viewport width for scalability */
+    height: 15vw; /* Keep the aspect ratio same as width */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contactMe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1vw; /* Adjust gap using viewport width for responsiveness */
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.nomContact, .jobContact {
+    font-size: 1.6vw; /* Adjust font size using viewport width */
+    color: #18186e;
+}
+
+/* Responsive adjustments using Media Queries */
+@media (max-width: 768px) {
+    .contactMe figure {
+        width: 25vw; /* Increase size for smaller screens */
+        height: 25vw;
+    }
+
+    .nomContact, .jobContact {
+        font-size: 2.5vw;
+    }
+
+    .contactMe .btn {
+        width: 50vw; /* Make buttons wider on smaller screens */
+        padding: 2vw;
+    }
+}
+
+.contactMeBg {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+    width: 50vw; /* Adjust width as a percentage of the viewport width */
+    height: 90vh; /* Adjust height as a percentage of the viewport height */
+    max-width: 600px; /* Maximum width */
+    max-height: 1500px; /* Maximum height */
+    min-width: 300px; /* Minimum width to ensure it's not too small */
+    min-height: 600px; /* Minimum height */
+    /*width: 50% ; /* Adjust width and height or use max-width for better control 
+    height: 70%;*/
+    background: linear-gradient(to right, #a6b8f88f, #fa953c8f);
+    z-index: -1;
+    border-radius: 20px; 
+}
+
+.contactMe a {
+    text-decoration: none;
+}
+
+.contactMe .btn {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactMe button {
+    background-color: #dd96f5bf;
+    color: white;
+}
+
+.contactMe .btn {
+    width: 20vw; 
+    padding: 1.5vh 1vw; 
+    font-size: calc(10px + 1vw); /* Use calc() for font size to adjust between minimum size and a relative size */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactMe button {
+    background-color: #dd96f5bf;
+    color: white;
+}
+
+.contactMe button:hover {
+    background-color: #a6b8f88f;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1024px) { /* Adjust for tablets and below */
+    .contactMe .btn {
+        width: 40vw; /* Increase width for smaller screens */
+        padding: 2vh 1.5vw; /* Adjust padding */
+        /*font-size: calc(12px + 1.5vw); /* Slightly larger font size */
+    }
+}
+
+@media (max-width: 768px) { /* Adjust for small tablets and mobile devices */
+    .contactMe .btn {
+        width: 50vw; /* Further increase width for small devices */
+        padding: 2.5vh 2vw; /* Increase padding */
+        /*font-size: calc(14px + 2vw); /* Further increase font size */
+    }
+}
+
+@media (max-width: 480px) { /* Adjust for very small screens */
+    .contactMe .btn {
+        width: 60vw; /* Maximize button width on very small screens */
+        padding: 3vh 2.5vw; /* Maximize padding for better touch targets */
+        font-size: calc(16px + 2.5vw); /* Increase font size for readability */
+    }
+}
+.contactMe button:hover {
+    background-color: #a6b8f88f;
+}
+
+.contactFooter {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #18186e;
+}
